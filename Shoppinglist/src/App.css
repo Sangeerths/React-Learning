@@ -1,0 +1,126 @@
+.app-shell {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: 40px 20px;
+}
+
+.shopping-card {
+  width: min(100%, 560px);
+  padding: clamp(28px, 7vw, 52px);
+  border: 1px solid rgba(35, 67, 48, 0.08);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 24px 70px rgba(98, 60, 94, 0.1);
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  color: #d368cc;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+  font-family: 'Times New Roman', serif;
+  font-size: clamp(2rem, 7vw, 2.8rem);
+  font-weight: 800;
+  letter-spacing: -0.06em;
+  line-height: 1.12;
+}
+
+.intro {
+  margin: 12px 0 34px;
+  color: #cb54b9;
+  line-height: 1.6;
+}
+
+.field-label {
+  display: block;
+  margin-bottom: 10px;
+  color: #4a174e;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.input-row {
+  display: flex;
+  gap: 10px;
+}
+
+.input-row input {
+  min-width: 0;
+  flex: 1;
+  padding: 13px 15px;
+  border: 1px solid #dce5dd;
+  border-radius: 10px;
+  outline: none;
+  background: #fbfcfb;
+  color: #cf91e6;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.input-row input::placeholder {
+  color: #e49fd4;
+}
+
+.input-row input:focus {
+  border-color: #5b9c70;
+  box-shadow: 0 0 0 3px rgba(177, 130, 243, 0.15);
+}
+
+.input-row button {
+  padding: 0 20px;
+  border: 0;
+  border-radius: 10px;
+  background: #d896fc;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 700;
+  transition: background-color 160ms ease, transform 160ms ease;
+}
+
+.input-row button:hover {
+  transform: translateY(-1px);
+  background: #812bba;
+}
+
+.input-row button:focus-visible {
+  outline: 3px solid rgba(169, 112, 205, 0.3);
+  outline-offset: 3px;
+}
+
+.item-list {
+  display: grid;
+  gap: 9px;
+  margin: 24px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item-list li {
+  padding: 13px 15px;
+  border: 1px solid #e8eee8;
+  border-radius: 10px;
+  background: #f8faf8;
+  color: #7d4f80;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 420px) {
+  .shopping-card {
+    border-radius: 18px;
+  }
+
+  .input-row {
+    flex-direction: column;
+  }
+
+  .input-row button {
+    min-height: 46px;
+  }
+}
