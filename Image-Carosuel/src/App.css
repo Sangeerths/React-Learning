@@ -1,0 +1,17 @@
+.carousel-container {
+  text-align: center;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.carousel img {
+  display: block;
+  width: 360px;
+  max-width: 100%;
+  height: auto;
+}
